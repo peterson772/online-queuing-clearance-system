@@ -21,3 +21,5 @@ composer.lock
 *.zip
 *.tar
 *.gz
+assets/images/campus.jpg
+assets/images/admin.jpg

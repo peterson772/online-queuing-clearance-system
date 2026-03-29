@@ -1,0 +1,295 @@
+/* ===== USJM GREEN THEME - COMPLETE REPLACEMENT ===== */
+
+:root {
+    --usjm-green: #28a745;
+    --usjm-dark-green: #1e7e34;
+    --usjm-light-green: #d4edda;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* ===== NAVBAR - CHANGED FROM BLUE TO GREEN ===== */
+.navbar {
+    background-color: var(--usjm-green) !important;
+}
+
+.navbar.bg-primary {
+    background-color: var(--usjm-green) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+/* ===== BUTTONS - CHANGED FROM BLUE TO GREEN ===== */
+.btn-primary {
+    background-color: var(--usjm-green) !important;
+    border-color: var(--usjm-green) !important;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--usjm-dark-green) !important;
+    border-color: var(--usjm-dark-green) !important;
+    transform: scale(1.02);
+}
+
+.btn-outline-primary {
+    color: var(--usjm-green) !important;
+    border-color: var(--usjm-green) !important;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--usjm-green) !important;
+    color: white !important;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 12px 24px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.02);
+}
+
+/* ===== CARDS ===== */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: none;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* ===== LINKS - CHANGED FROM BLUE TO GREEN ===== */
+a {
+    color: var(--usjm-green) !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--usjm-dark-green) !important;
+    text-decoration: underline;
+}
+
+/* ===== PROGRESS BAR - CHANGED FROM BLUE TO GREEN ===== */
+.progress {
+    border-radius: 20px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: var(--usjm-green) !important;
+    transition: width 0.5s ease;
+}
+
+/* ===== ALERTS ===== */
+.alert {
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+    color: #155724 !important;
+}
+
+.alert-info {
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+    color: #155724 !important;
+}
+
+/* ===== TABLES ===== */
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* ===== BADGES ===== */
+.badge {
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+.badge-primary {
+    background-color: var(--usjm-green) !important;
+}
+
+.badge-success {
+    background-color: #28a745 !important;
+}
+
+/* ===== ICON BOXES FOR HOMEPAGE ===== */
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--usjm-green), var(--usjm-dark-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
+}
+
+/* ===== FEATURE CARDS ===== */
+.feature-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card h3 {
+    color: var(--usjm-green);
+    font-weight: 700;
+}
+
+/* ===== HERO SECTION (if used) ===== */
+.hero-section {
+    background: linear-gradient(145deg, #1e4620 0%, var(--usjm-green) 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-logo {
+    max-height: 100px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    .btn-primary, .btn-success {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-logo {
+        max-height: 70px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* ===== DASHBOARD SPECIFIC ===== */
+.dashboard-card {
+    border-left: 4px solid var(--usjm-green);
+}
+
+.queue-position {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--usjm-green);
+}
+
+/* ===== LOADING SPINNER ===== */
+.spinner-border {
+    color: var(--usjm-green) !important;
+}
+
+/* ===== QUEUE DISPLAY ===== */
+.queue-number {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--usjm-green);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+/* ===== FIX: Make cards yellow so white text is readable ===== */
+.feature-card {
+    background: linear-gradient(135deg, #ffc107, #ffb300) !important;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card .card-body {
+    background: transparent !important;
+}
+
+.feature-card h3,
+.feature-card p,
+.feature-card .icon-box i,
+.feature-card .icon-box {
+    color: #ffffff !important;
+}
+
+.feature-card .btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white !important;
+}
+
+.feature-card .btn:hover {
+    background-color: white;
+    color: #ffc107 !important;
+}
+/* ===== FIX: Make navbar links white ===== */
+.navbar .nav-link,
+.navbar-nav .nav-link,
+.navbar a {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar-nav .nav-link:hover,
+.navbar a:hover {
+    color: #f0f0f0 !important;
+    opacity: 0.9;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+/* If you have a dropdown or toggler */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
